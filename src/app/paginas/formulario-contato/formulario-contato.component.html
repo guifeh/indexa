@@ -9,24 +9,30 @@
         </section>
     </header>
 
-    <form>
+    <form [formGroup]="contatoForm" (ngSubmit)="salvarContato()">
         <label for="nome">Nome</label>
         <input 
         type="text"
         id="nome"
-        placeholder="Digite o nome do contato"/>
+        placeholder="Digite o nome do contato"
+        formControlName="nome"
+        />
 
         <label for="telefone">Telefone</label>
         <input 
         type="text"
         id="telefone"
-        placeholder="Digite o telefone do contato"/>
+        placeholder="Digite o telefone do contato"
+        formControlName="telefone"
+        />
 
         <label for="email">E-mail</label>
         <input 
         type="email"
         id="nome"
-        placeholder="Digite o email do contato"/>
+        placeholder="Digite o email do contato"
+        formControlName="email"
+        />
 
         <app-separador></app-separador>
 
@@ -34,7 +40,9 @@
         <input 
         type="date"
         id="aniversario"
-        placeholder="Data de nascimento"/>
+        placeholder="Data de nascimento"
+        formControlName="aniversario"
+        />
         
         <label for="redes">Redes Sociais</label>
         <div class="input-container">
@@ -42,7 +50,9 @@
             <input 
             type="url"
             id="redes"
-            placeholder="Adicione a URL da página"/>
+            placeholder="Adicione a URL da página"
+            formControlName="redes"
+            />
         </div>
 
         <label for="observacoes">Observações</label>
@@ -50,10 +60,11 @@
         type="text"
         id="nome"
         placeholder="Coloque observações nesse espaço. Exemplo: 'Instrutora da academia 'Nova Imagem', 'amiga da Júlia'. "
+        formControlName="observacoes"
         ></textarea>
 
         <section class="botoes">
-            <button class="botao-cancelar" type="submit">Cancelar</button>
+            <button (click)="cancelar()" class="botao-cancelar" type="button">Cancelar</button>
             <button class="botao-salvar" type="submit">Salvar</button>
         </section>
     </form>
