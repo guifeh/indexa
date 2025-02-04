@@ -34,6 +34,13 @@
         align-items: center;
         margin-top: 32px;
     }
+
+    header .cabecalho-link button {
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        background: none;
+    }
     
     h1 {
         font-family: 'Montserrat';
