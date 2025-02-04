@@ -9,7 +9,7 @@
 }
 
 .cabecalho .titulo {
-    color:	#0D6EFD;
+    color:  #0D6EFD;
     text-align: center;
     font-family: 'Zen Dots';
     font-size: 26px;
@@ -17,8 +17,8 @@
     font-weight: 400;
     line-height: 150%;
     margin: 0;
-    }
+}
 
 .cabecalho .titulo span {
-    color: #fd9843;
+    color: #FD9843;
 }
