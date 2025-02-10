@@ -9,10 +9,8 @@ import { ListaContatosComponent } from './paginas/lista-contatos/lista-contatos.
   standalone: true,
   imports: [
     CommonModule,
-    FormularioContatoComponent,
-    ListaContatosComponent,
     RouterOutlet
-  ],
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

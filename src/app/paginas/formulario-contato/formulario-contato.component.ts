@@ -17,7 +17,6 @@ import { CabecalhoComponent } from "../../componentes/cabecalho/cabecalho.compon
     ContainerComponent,
     SeparadorComponent,
     ReactiveFormsModule,
-    RouterLink,
     MensagemErroComponent,
     CabecalhoComponent
 ],
