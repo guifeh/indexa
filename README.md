@@ -1,27 +1,43 @@
+![Descricao da sua imagem](./thumbnail.png)
+
 # Indexa
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+Uma aplicação para manipulação de contatos de uma agenda.
 
-## Development server
+## 🔨 Funcionalidades do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
 
-## Code scaffolding
+Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
+Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ✔️ Técnicas e tecnologias utilizadas
 
-## Build
+As técnicas e tecnologias utilizadas pra isso são:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
+- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
+- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
+- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
 
-## Running unit tests
+## 📁 Link do Figma
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
 
-## Running end-to-end tests
+## 🛠️ Abrir e rodar o projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Você vai precisar do NodeJS, versão 18 ou maior.
 
-## Further help
+Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+```
+
+Depois, para executar o projeto em modo desenvolvimento:
+
+```bash
+ng serve
+```
+
+Depois, acesse [http://localhost:4200/](url) no seu navegador.
